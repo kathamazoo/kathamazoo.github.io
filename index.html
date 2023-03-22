@@ -37,7 +37,9 @@
     <div class="landing-text">
         <h1>THE SKILLS LAB</h1>
         <h2>Learn things and pay us money.</h2>
-        <a href="services.html" class="btn btn-default btn-lg">Get Started</a>
+        <!-- modal link-->
+        <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#subscribeModal">Get Started</a>
+        <!-- end modal link-->
     </div>
 </div>
 <div class="padding">
@@ -92,7 +94,34 @@
         </div>        
     </div>
 </div>
-
+<!-- subscribe modal -->
+<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="subscribeModalLabel">Subscribe to our newsletter</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="control-label">Name:</label>
+              <input type="text" class="form-control" id="recipient-name" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-email" class="control-label">Email:</label>
+              <input type="email" class="form-control" id="recipient-email" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end subscribe modal -->
 <footer class="container-fluid text-center">
     <div class="row">
         <div class="col-sm-4">
